@@ -59,21 +59,17 @@
             <span>-{{comment.author}}, {{comment.date | date}}</span>
             </blockquote>
           </li>
-        </ul>
-      
-
-        
+        </ul> 
       </div>
-    </div>
-   
+    </div>  
 </div>
 
     <script src="../bower_components/angular/angular.min.js"></script>
     <script>
 
-        var app = angular.module('confusionApp',[]);
+         angular.module('confusionApp',[])
         
-        app.controller('dishDetailController', function($scope) {
+        .controller('dishDetailController', function($scope) {
 
             var dish={
                           name:'Uthapizza',
